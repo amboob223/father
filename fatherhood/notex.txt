@@ -1,0 +1,36 @@
+this app is about getting user info from the form and doing some logic on it to get thisngs we want done and making methiods to do stuff in a n oo type of eway
+the father app will interact with the baby class and have certain methods and there also need sto be an app class that has methods for both class you need a father and child instance for the app cladd to workd
+
+father methods and varibles 
+    -name, age, child instance svaed as a string,budget 
+        - find child doctor - its a method that save a doctor name to go along with the child
+        - find some activity to do with the child depending on the child age and gender 
+        - get advice - generates random quotes and advice for fathers 
+
+child 
+    - varibles include name, father instance saved as string, intrest(array),Age 
+        - methods say I love you pop
+        - suggestion to eat
+        -suggest activity
+
+app
+    -varibles father,children
+    -method 
+        session
+            takes all the ifor and connects the classes you need a dather and child to have an instance of the app
+
+    the purpose here is to see if my env varibles will work and get functionality form diffrent classes to do diffrent stuff 
+
+
+
+//okay when putting in array data as a data type we need square brackets for sql 
+
+we also want to make the econ app 
+and the food playlist app 
+also got to find them spots and we can try kinsta too 
+
+
+
+
+got t0 naje 3 resumes 
+learn about the prompt command 
