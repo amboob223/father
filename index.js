@@ -22,7 +22,17 @@
                     headers:{"Content-type":"application/json"},
                     body:JSON.stringify(body)
                 })
+                alert("okay we got you pop")
+
+
+  
                 console.log("work")
+
+                fname.value =""
+                fage.value = ""
+                fchild.value = ""
+                fbudget.value = ""
+                
                 } catch (error) {
                     console.log(error)
                 }
@@ -59,7 +69,14 @@
                 body:JSON.stringify(body)
                 
             })
+            alert("okay we got you baby")
             console.log("work")
+
+            bname.value =""
+            bage.value = ""
+            bdoctor.value = ""
+            bintrest.value = ""
+        
             } catch (error) {
                 console.log(error)
             }

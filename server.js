@@ -49,5 +49,5 @@ app.get("/baby",async (req,res)=>{
 })
 
 
-    app.listen(5000,
-        console.log("we good"));
+    app.listen("5000", ()=>{
+        console.log("we good")});
