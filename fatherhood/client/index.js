@@ -1,3 +1,5 @@
+
+
 // here is where i will keep the script for everything 
         //father varibles
     const fname = document.getElementById("fname");
@@ -32,7 +34,7 @@
                 fage.value = ""
                 fchild.value = ""
                 fbudget.value = ""
-                
+
                 } catch (error) {
                     console.log(error)
                 }

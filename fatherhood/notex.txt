@@ -12,6 +12,8 @@ child
         - methods say I love you pop
         - suggestion to eat
         -suggest activity
+        - we need a button to get all the fathers maybe idk 
+        - also the rating app for people 
 
 app
     -varibles father,children
