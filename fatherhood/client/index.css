@@ -1,5 +1,81 @@
-.outC>#dip{
+/* Center the main content of the page */
+body {
     display: flex;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin 
+
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font family */
+    color: #333; /* Dark gray text color */
+  }
+  
+  h1 {
+    color: #007bff; /* Blue for headings */
+  }
+  
+  /* Form styling */
+  form {
+    background-color: #fff; /* White background for forms */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for forms */
+  }
+  
+  /* Input fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Container styling */
+  .outC {
+    margin-bottom: 20px;
+  }
+  
+  /* Rip container */
+ */
+  
+  /* Apply width to the container to control maximum width of the content */
+  .outC {
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Set a maximum width for your content */
+  }
+  
+
+.outC>.rip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Apply the styling to input elements within the "Father" form */
+form[action="http://localhost:5000/father"] input {
+  display: block; /* Display each input on a new line */
+  margin-bottom: 10px; /* Optional spacing between each input */
 }
 
+/* Apply the styling to input elements within the "Baby" form */
+form[action="http://localhost:5000/baby"] input {
+  display: block; /* Display each input on a new line */
+  margin-bottom: 10px; /* Optional spacing between each input */
+}

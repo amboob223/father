@@ -9,9 +9,9 @@ const pool = require("./db");
 
 app.post("/father",async(req,res)=>{
       try {
-           const {name,age,children,budget} = req.body // this will come from the json object 
-    const newData = await pool.query(
-        "INSERT INTO fathers(id,name,age,child,budget) VALUES(nextval('fathers_id_seq'),$1,$2,$3,$4) RETURNING *",
+            const {name,age,children,budget} = req.body // this will come from the json object 
+            const newData = await pool.query(
+            "INSERT INTO fathers(id,name,age,child,budget) VALUES(nextval('fathers_id_seq'),$1,$2,$3,$4) RETURNING *",
         [name,age,children,budget]
     );
     res.json(newData.rows)//res.json turns the quesry to some json the shit will uderstand and we get the rows form the object
@@ -25,7 +25,7 @@ app.post("/baby", async(req,res)=>{
    
     try {
          const {name,age,doctor, intrest} = req.body
-    const newData = await pool.query(
+         const newData = await pool.query(
         "INSERT INTO babies(id,name,age,doctor,intrest) VALUES(nextval('babies_id_seq'),$1,$2,$3,$4) RETURNING *",
         [name,age,doctor,intrest]
     )
@@ -46,7 +46,7 @@ app.get("/baby",async (req,res)=>{
     } catch (error) {
         console.log("yup")
     }
-})
+});
 
 
     app.listen("5000", ()=>{

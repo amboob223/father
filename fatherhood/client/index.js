@@ -4,8 +4,6 @@
         //father varibles
     const fname = document.getElementById("fname");
     const fage = document.getElementById("fage");
-    const fchild = document.getElementById("fchild");
-    const fbudget = document.getElementById("fbudget");
     const fbtn = document.getElementById("fbtn");
 
         //submit button 
@@ -15,9 +13,7 @@
                 try {
                      const body = {
                     name:fname.value,
-                    age:fage.value,
-                    child:fchild.value,
-                    budget:fbudget.value,
+                    age:fage.value
                 }
                 const response = await fetch("http://localhost:5000/father",{
                     method:"POST",    
@@ -32,8 +28,7 @@
 
                 fname.value =""
                 fage.value = ""
-                fchild.value = ""
-                fbudget.value = ""
+               
 
                 } catch (error) {
                     console.log(error)
@@ -41,7 +36,7 @@
         })
         //baby elememnts 
     const bname = document.getElementById("bname");
-    const bage = document.getElementById("bage");
+
     const bdoctor = document.getElementById("bdoctor");
     const bintrest = document.getElementById("bintrest");
     const bbtn = document.getElementById("bbtn");
@@ -60,7 +55,7 @@
 
             const body= {
                 name:bname.value,
-                age:bage.value,
+            
                 doctor:bdoctor.value,
                 intrest:formatarr
             }
@@ -75,7 +70,6 @@
             console.log("work")
 
             bname.value =""
-            bage.value = ""
             bdoctor.value = ""
             bintrest.value = ""
         

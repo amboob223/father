@@ -70,13 +70,15 @@ class Father {
     async getInterest(Bname, json) {
         let nameFound = false;
 
+        const int = document.getElementById("pool");
+
         for (let i = 0; i < json.rows.length; i++) {
             const name = json.rows[i]["name"];
             const intrest = json.rows[i]["intrest"];
 
             if (name === Bname) {
-                console.log("Selected intrest:", intrest);
-
+            
+                int.innerHTML = `${name}'s ` +" intrest are "+ `${intrest}`
                 // Update your HTML here with the selected activity
                 // For example, you can use innerHTML to display the selected activity
                 // const activityDisplay = document.getElementById("activity-display");
@@ -96,19 +98,19 @@ class Father {
     async getDoctor (bname,json){
         let nameFound = false;
 
+            const doc = document.getElementById("cool");
+
+
             for(let i= 0; i < json.rows.length; i++){
                     const name = json.rows[i]["name"];
                     const doctor = json.rows[i]["doctor"];
 
                     if(name === bname){
-                        console.log("selected doctors",doctor)
-
+                       
+                        doc.innerHTML = `${name}'s `+" doctor's name is "+`${doctor}`
                         nameFound = true
                         break;
                     }
-
-
-
             }
             if(!nameFound){
                 console.log("name found")
